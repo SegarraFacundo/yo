@@ -1,7 +1,7 @@
 # yo
 Todo la información sobre quien soy y que hago
 
-## Requeriments
+## Requirements
 
 - Terraform v0.12.21
 - jq version: jq-1.5-1-a5b5cbe. JQ is a lightweight and flexible command-line JSON processor
