@@ -1,0 +1,16 @@
+digitalocean_token = "" #Token API Personal https://developers.digitalocean.com/documentation/v2/
+
+cluster_name    = "web"
+cluster_region  = "nyc1"
+cluster_version = "1.16.6-do.0"
+
+cluster_nodes_name  = "web-nodes"
+cluster_nodes_size  = "s-1vcpu-2gb"
+cluster_nodes_count = 1
+cluster_nodes_tag   = "web-nodes"
+
+docker_image = "propietario/app" #Imagen de la app en https://hub.docker.com/ Importante: puerto de la app 80
+
+domain_name = "mydominio"
+subdomain_name = "www"
+acme_email = "myemail@myemail"

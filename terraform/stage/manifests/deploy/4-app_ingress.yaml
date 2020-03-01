@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: app-ingress
+spec:
+  rules:
+  - host: %{ if subdomain_name != "" }${subdomain_name}.${domain_name}%{ else }${domain_name}%{ endif }
+    http:
+      paths:
+      - backend:
+          serviceName: app-me-svc
+          servicePort: 8080
