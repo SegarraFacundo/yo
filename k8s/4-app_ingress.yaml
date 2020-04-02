@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: app-ingress
+spec:
+  rules:
+  - host: me.facundosegarra.dev
+    http:
+      paths:
+      - backend:
+          serviceName: app-srv
+          servicePort: 80
