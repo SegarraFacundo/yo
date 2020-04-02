@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: yo-ingress
+    annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+spec:
+  tls:
+  - hosts:
+    - me.facundosegarra.dev
+    secretName: echo-tls
+  rules:
+  - host: me.facundosegarra.dev
+    http:
+      paths:
+      - backend:
+          serviceName: app-srv
+          servicePort: 80
