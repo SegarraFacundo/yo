@@ -2,7 +2,7 @@ digitalocean_token = "" #Token API Personal https://developers.digitalocean.com/
 
 cluster_name    = "web"
 cluster_region  = "nyc1"
-cluster_version = "1.16.6-do.0"
+cluster_version = "1.16.6-do.2"
 
 cluster_nodes_name  = "web-nodes"
 cluster_nodes_size  = "s-1vcpu-2gb"
